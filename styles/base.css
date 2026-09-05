@@ -7,6 +7,18 @@
 }
 
 /* header begins here */
+header, footer {
+    font-family: "Valley Sans", sans-serif;
+    font-weight: 350;
+}
+
+main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-top: 0;
+}
 
 header span {
     display: block;
@@ -52,6 +64,7 @@ body {
 
 main h1 {
     text-align: center;
+    margin: 0;
 }
 
 
@@ -65,7 +78,7 @@ main h1 {
 .card h2 {
     margin-top: 0;
     background-color: var(--accent-color);
-    color: var(--white-color);,
+    color: var(--dark-color);,
 }
 
 .profile {
@@ -98,7 +111,6 @@ main h1 {
     margin-right: 20px;
     margin-top: 20px;
     float: left;
-    clear: both;
 }
 
 .flag figcaption {
@@ -115,10 +127,9 @@ main h1 {
 /* Web Dev Recourses Begins */
 
 .web-dev {
-    margin: 5rem 0;
-    display: grid;  
-    grid-template-columns: auto;
-}
+    display: flex;
+    flex-direction: column;
+}   
 
 /* End of Web Dev Recourses */
 
@@ -130,4 +141,5 @@ footer {
 
 footer p {
     text-align: center;
+    font-size: 0.8rem;
 }
