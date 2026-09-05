@@ -105,6 +105,17 @@ main h1 {
 
 .figure {
     float: left;
+    margin: 0 20px 10px 0;
+}
+
+.figure img {
+    width: 15rem;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* .figure {
+    float: left;
 }
 
 .figure img {
@@ -115,7 +126,7 @@ main h1 {
     margin-right: 20px;
     margin-top: 20px;
   
-}
+} */
 
 figcaption {
     font-weight: 700;
