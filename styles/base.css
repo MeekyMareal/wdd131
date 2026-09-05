@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #2563EB;
+    --dark-color: #1E293B;
+    --background-color: #F8FAFC;
+    --white-color: #FFFFFF;
+    --accent-color: #F59E0B;
+}
+
+/* header begins here */
+
+header span {
+    display: block;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
+    background-color: var(--primary-color);
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav li a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.navigation a:hover {
+	text-decoration: underline;
+	text-decoration-color: var(--white-color);
+}
+
+/* Header ends here */
+
+/* This is where About me begins and short description of Nigeria  */
+
+body {
+    font-family: "Valley Sans", sans-serif;
+    font-weight: 400;
+    background-color: var(--background-color);
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 5px;
+}
+
+main h1 {
+    text-align: center;
+}
+
+
+.card {
+    border-radius: 10px;
+    border: 3px solid var(--dark-color);
+    margin: 20px 0;
+    padding: 5px;
+}
+
+.card h2 {
+    margin-top: 0;
+    background-color: var(--accent-color);
+    color: var(--white-color);,
+}
+
+.profile {
+    width: 10rem;
+    height: auto;
+    border-radius: 5px;
+    float: right;
+    padding-left: 10px;
+}
+
+.section1-bio {
+    text-align: justify;
+}
+
+.card h3 {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--dark-color);
+}
+
+.flag {
+    float: left;
+}
+
+.flag img {
+    width: 15rem;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 20px;
+    float: left;
+    clear: both;
+}
+
+.flag figcaption {
+    font-weight: 700;
+    text-align: center;
+}
+
+.section1-text {
+    text-align: justify;
+}
+
+/* About me and Nigeria Description ends */
+
+/* Web Dev Recourses Begins */
+
+.web-dev {
+    margin: 5rem 0;
+    display: grid;  
+    grid-template-columns: auto;
+}
+
+/* End of Web Dev Recourses */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1px 0;
+}
+
+footer p {
+    text-align: center;
+}

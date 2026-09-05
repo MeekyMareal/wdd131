@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+header h1 {
+    background-color: blue;
+    color: aliceblue;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+ul {
+    display: flex;
+    position: relative;
+    background-color: rgb(130, 40, 40);
+    justify-content: space-around;
+    padding: 12px;
+}
+
+li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+	text-decoration: underline;
+	text-decoration-color: yellow;
+}
+
+.main-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+main {
+    background-color: rgb(119, 58, 176);
+    color: aliceblue;
+    padding-bottom: 8rem;
+}
+
+aside {
+    background-color: rgb(211, 211, 110);
+    color: rgb(37, 49, 60);
+}
+
+footer {
+    background-color: black;
+    color: aliceblue;
+    padding-bottom: 8rem;
+}
