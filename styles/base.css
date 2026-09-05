@@ -1,15 +1,16 @@
 :root {
-    --primary-color: #2563EB;
-    --dark-color: #1E293B;
-    --background-color: #F8FAFC;
-    --white-color: #FFFFFF;
-    --accent-color: #F59E0B;
+    --primary-color: #0D47A1; 
+    --dark-color: #082B61;      
+    --background-color: #EAF2FF;  
+    --white-color: #FFFFFF;    
+    --accent-color: #1565C0;   
 }
 
 /* header begins here */
-header, footer {
+header {
     font-family: "Valley Sans", sans-serif;
     font-weight: 350;
+    background-color: var(--dark-color);
 }
 
 main {
@@ -42,8 +43,9 @@ nav li a {
 }
 
 .navigation a:hover {
-	text-decoration: underline;
 	text-decoration-color: var(--white-color);
+    border-radius: 2px;
+    border: 1px solid var(--white-color);
 }
 
 /* Header ends here */
@@ -78,7 +80,7 @@ main h1 {
 .card h2 {
     margin-top: 0;
     background-color: var(--accent-color);
-    color: var(--dark-color);,
+    color: var(--white-color)
 }
 
 .profile {
