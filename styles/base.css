@@ -44,10 +44,13 @@ nav li a {
     text-decoration: none;
 }
 
-.navigation a:hover,
-.navigation a:focus {
+.navigation a:hover {
     text-decoration: underline;
     border-radius: 2px;
+    border: 1px solid var(--white-color);
+}
+
+.navigation a:focus {
     outline: 2px solid var(--white-color);
     outline-offset: 2px;
 }
@@ -59,7 +62,9 @@ nav li a {
 
 body {
     font-family: "Valley Sans", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
+    font-style: normal;
     background-color: var(--background-color);
 }
 
@@ -136,7 +141,14 @@ figcaption {
 .web-dev {
     display: flex;
     flex-direction: column;
-}   
+    gap: 6px;
+    padding-left: 1.5rem;
+}
+
+.web-dev a {
+    display: inline-block;
+    padding: 10px;
+}
 
 /* End of Web Dev Recourses */
 
