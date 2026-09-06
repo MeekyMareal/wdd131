@@ -36,6 +36,7 @@ nav ul {
     background-color: var(--primary-color);
     justify-content: space-around;
     padding: 10px;
+    color: var(--white-color);
 }
 
 nav li a {
