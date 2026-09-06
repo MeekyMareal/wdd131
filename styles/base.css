@@ -27,6 +27,7 @@ header span {
     color: var(--white-color);
     padding: 0.5rem;
     font-size: 1.2rem;
+    color: var(--white-color);
 }
 
 nav ul {
