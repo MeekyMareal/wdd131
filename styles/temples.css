@@ -45,6 +45,8 @@ header h1 {
 nav {
     text-align: center;
     background-color: var(--color-accent);
+    display: flex;
+    flex-direction: row;
 }
 
 .navigation {
