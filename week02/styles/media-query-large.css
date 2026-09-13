@@ -1,0 +1,40 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+  text-align: justify;
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #3e27bd84;
+    padding: 1rem;
+    background-color: rgb(57, 57, 174);
+    color: azure;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    background-color: #9f0909;
+    padding: 1rem;
+}
+
+
+@media screen and (min-width: 500px) {
+    header {
+        background-color: black;
+        color: white;
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
