@@ -3,12 +3,12 @@
 		display: grid;
         grid-template-columns: 40% 70%;
         align-items: center;
-        background-color: #1E1B4B;
+        background-color: #4b1b39;
 	}
 
     header h1 {
         background-color: transparent;
-        color: #F59E0B;
+        color: #F3F4F6;
     }
 
     nav {

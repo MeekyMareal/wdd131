@@ -1,8 +1,8 @@
 :root {
-    --color-primary: #2563EB;  
+    --color-primary: #102e71;  
     --color-primary-hover: #1D4ED8;
     --color-secondary: #0F172A;
-    --color-accent: #F59E0B;
+    --color-accent: #335094;
     --color-text: #FFFFFF;
     --white: white;
 }
@@ -25,6 +25,7 @@ header h1 {
     font-size: 2em;
     font-weight: 700;    
     margin-top: 0;
+    color: var(--color-text);
 }
 
 #menu {
