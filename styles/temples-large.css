@@ -1,11 +1,3 @@
-:root {
-    --color-primary2: #8B5CF6;  
-    --color-primary-hover2: #7C3AED;
-    --color-secondary2: #1E1B4B;
-    --color-accent2: #F59E0B;
-    --color-text2: #F3F4F6;
-}
-
 @media (min-width: 640px) {
 	header {
 		display: grid;
