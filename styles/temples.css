@@ -48,6 +48,7 @@ nav {
     background-color: var(--color-accent);
     display: flex;
     flex-direction: row;
+    color: var(--color-secondary);
 }
 
 .navigation {
