@@ -2,9 +2,10 @@
     --color-primary: #102e71;  
     --color-primary-hover: #1D4ED8;
     --color-secondary: #0F172A;
-    --color-accent: #335094;
+    --color-accent: #0000CD;
     --color-text: #FFFFFF;
     --white: white;
+    --nav-text: #ADD8E6
 }
 
 * {
@@ -48,7 +49,7 @@ nav {
     background-color: var(--color-accent);
     display: flex;
     flex-direction: row;
-    color: var(--color-secondary);
+    color: var(--nav-text);
 }
 
 .navigation {
