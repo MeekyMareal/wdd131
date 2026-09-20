@@ -41,6 +41,7 @@ section {
     background-color: var(--primary-color);
     border-top: 10px solid transparent;
     top: 40px;
+    border-radius: 7px;
 }
 
 section .data, section .weather {
@@ -87,6 +88,14 @@ li {
     width: 50%;
     text-align: left;
     padding-left: 8px;
+}
+
+#temperature::after, #windchill::after {
+    content: "℃";
+}
+
+#wind::after {
+    content: "km/h";
 }
 
 footer {

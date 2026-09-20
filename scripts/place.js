@@ -13,7 +13,7 @@ function showWindChill() {
 
     if (temperature <= 10 && windSpeed > 4.8) {
         const result = calculateWindChill(temperature, windSpeed);
-        windChillDiv.textContent = Math.round(result) + " °C";
+        windChillDiv.textContent = Math.round(result);
     } else {
         windChillDiv.textContent = "N/A";
     }
@@ -22,7 +22,7 @@ function showWindChill() {
 showWindChill();
 
 const temp = document.getElementById("temperature");
-temp.textContent = temperature + " ℃";
+temp.textContent = temperature;
 
 const wind = document.getElementById("wind");
-wind.textContent = windSpeed + " km/h";
+wind.textContent = windSpeed;
