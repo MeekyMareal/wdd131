@@ -18,3 +18,5 @@
         align-self: center;
         opacity: 0.80;
     }
+
+    alt="People celebrating in traditional green attire while waving small Nigerian flags"
