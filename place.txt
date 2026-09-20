@@ -1,0 +1,20 @@
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .hero, 
+    .section {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        justify-content: center;
+        z-index: 1;
+        align-self: center;
+        opacity: 0.80;
+    }

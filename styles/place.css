@@ -1,0 +1,124 @@
+:root {
+    --primary-color: bisque;
+    --secondary-color:  green;
+    --accent1-color: white;
+    --border: 5px solid orange;
+}
+
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    padding: 5px;
+    font-weight: 700;
+}
+body {
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "GRAD" 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+	margin: 0;
+	border: var(--border);
+	padding: 0.5rem;
+}
+
+section {
+    background-color: var(--primary-color);
+    border-top: 10px solid transparent;
+    top: 40px;
+}
+
+section .data, section .weather {
+    text-align: left;
+    font-weight: 700;
+    font-size: larger;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    margin-right: 9rem;
+    border-radius: 0 12px 0 12px;
+}
+
+.data::before, .weather::before {
+    content: "※";
+}
+
+section .svg {
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
+
+.data-list {
+    list-style: none;
+    padding: 0;
+}
+
+.data-list li {
+    display: flex;
+}
+
+.label {
+    width: 50%;
+    text-align: right;
+    padding-right: 8px;
+    font-weight: bold;
+}
+
+.value {
+    width: 50%;
+    text-align: left;
+    padding-left: 8px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+@media (min-width: 640px) {
+    .hero {
+    position: relative;
+    bottom: 16px;
+    }
+
+    .hero .hero-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero .section1 {
+        position: absolute;
+        top: 20px;
+        padding: 10px;
+        text-align: center;
+        opacity: 0.7;
+    }
+
+    .hero .section2 {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        opacity: 0.7;
+
+    }
