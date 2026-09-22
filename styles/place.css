@@ -61,6 +61,9 @@ section .data, section .weather {
 section .svg {
     text-align: center;
     background-color: var(--primary-color);
+    width: 5rem;
+    height: 5rem;
+    color: var(--secondary-color);
 }
 
 li {
@@ -107,11 +110,9 @@ footer {
 @media (min-width: 640px) {
     .hero {
     position: relative;
-    bottom: 16px;
     }
 
     .hero .hero-image {
-        display: block;
         width: 100%;
         height: auto;
     }
@@ -129,5 +130,14 @@ footer {
         bottom: 20px;
         right: 20px;
         opacity: 0.7;
+    }
+
+    .svg {
+        display: none;
+    }
+
+    .weather::after {
+        content: "🌥️";
+        margin-left: 0.85rem;
     }
 }
