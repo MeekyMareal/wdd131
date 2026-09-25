@@ -40,9 +40,9 @@ header h1 {
 
 
 nav {
-    text-align: center;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .navigation {

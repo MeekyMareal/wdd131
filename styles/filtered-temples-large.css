@@ -1,7 +1,7 @@
 @media (min-width: 520px) {
 	header {
 		display: grid;
-        grid-template-columns: 40% 70%;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
         background-color: #4b1b39;
 	}
@@ -12,6 +12,7 @@
 
     nav {
         background-color: transparent;
+        justify-content: flex-end;
     }
 
     .navigation {
@@ -37,7 +38,7 @@
 
     .navigation a:hover {
         border: 2px solid #F3F4F6;
-        background-color: #F59E0B;
+        background-color: #1D4ED8;
         padding: 5px;
     }
 
