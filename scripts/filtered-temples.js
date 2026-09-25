@@ -68,24 +68,24 @@ const temples = [
         templeName: "Atlanta Georgia Temple",
         location: "Sandy Springs, Georgia, United States",
         dedicated: "1983, June 4",
-        area: 4283,
+        area: 34500,
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/atlanta-georgia-temple/atlanta-georgia-temple-2144-thumb.jpg"
     },
     {
         templeName: "Winchester Virginia Temple",
         location: "Winchester, Virginia, United States",
         dedicated: "2025, August, 9",
-        area: 22601,
+        area: 30000,
         imageUrl:
         "https://churchofjesuschristtemples.org/assets/img/temples/winchester-virginia-temple/winchester-virginia-temple-72660-thumb.jpg"
     },
     {
-        templeName: "Lagos Nigeria Temple",
-        location: "Ikoyi, Lagos, Nigeria",
-        dedicated: "2025, May, 10",
-        area: 101233,
+        templeName: "Fort Collins Colorado Temple",
+        location: "Fort Collins, Colorado, United States",
+        dedicated: "2013, August, 24",
+        area: 42000,
         imageUrl:
-        "https://churchofjesuschristtemples.org/assets/img/temples/lagos-nigeria-temple/lagos-nigeria-temple-58577-main.jpg"
+        "https://churchofjesuschristtemples.org/assets/img/temples/fort-collins-colorado-temple/fort-collins-colorado-temple-11059-thumb.jpg"
     },
 ];
 
