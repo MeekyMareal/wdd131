@@ -53,7 +53,7 @@
     }
 }
 
-@media (min-width: 680px) {
+@media (min-width: 740px) {
     .figure {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
