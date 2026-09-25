@@ -69,8 +69,7 @@ const temples = [
         location: "Sandy Springs, Georgia, United States",
         dedicated: "1983, June 4",
         area: 4283,
-        imageUrl:
-        "https://churchofjesuschristtemples.org/assets/img/temples/atlanta-georgia-temple/atlanta-georgia-temple-13940-main.jpg"
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/atlanta-georgia-temple/atlanta-georgia-temple-2144-thumb.jpg"
     },
     {
         templeName: "Winchester Virginia Temple",
@@ -78,7 +77,7 @@ const temples = [
         dedicated: "2025, August, 9",
         area: 22601,
         imageUrl:
-        "https://churchofjesuschristtemples.org/assets/img/temples/winchester-virginia-temple/winchester-virginia-temple-56021-main.jpg"
+        "https://churchofjesuschristtemples.org/assets/img/temples/winchester-virginia-temple/winchester-virginia-temple-72660-thumb.jpg"
     },
     {
         templeName: "Lagos Nigeria Temple",
