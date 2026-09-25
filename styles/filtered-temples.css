@@ -100,16 +100,14 @@ section {
     font-size: medium;
     max-width: 15rem;
     border-radius: 5px;
-    height: auto;
-    box-sizing: border-box;
-    box-shadow: 0 0 0 2px #333;
+    height: fit-content;
 }
 
-.figure img {
-    max-width: 15rem;
-    height: auto;
-    margin: 10px;
+img {
+    width: 15rem;
+    height: 15rem;
     border-radius: 5px;
+    margin-top: 5px;
 }
 
 h3 {
