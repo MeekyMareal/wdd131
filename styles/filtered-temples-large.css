@@ -1,4 +1,4 @@
-@media (min-width: 640px) {
+@media (min-width: 520px) {
 	header {
 		display: grid;
         grid-template-columns: 40% 70%;
@@ -53,4 +53,10 @@
     }
 }
 
-@
+@media (min-width: 680px) {
+    .figure {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
