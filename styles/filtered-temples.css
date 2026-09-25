@@ -8,8 +8,9 @@
 }
 
 body {
-    padding: 0;
     background-color: aquamarine;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -77,22 +78,18 @@ nav a {
     content: "✕";
 }
 
-
 main {
   max-width: 840px;
 }
-
 
 main h2 {
     text-align: center;
 }
 .figure {
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 15px;
-
 }
+
 section {
     background-color: #102e71;
     color: #FFFFFF;
