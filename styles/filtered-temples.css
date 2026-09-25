@@ -98,14 +98,14 @@ section {
     color: #FFFFFF;
     text-align: center;
     font-size: medium;
-    max-width: 15rem;
+    max-width: 20rem;
     border-radius: 5px;
     height: fit-content;
 }
 
 img {
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 5px;
     margin-top: 5px;
 }
