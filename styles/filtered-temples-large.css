@@ -1,4 +1,4 @@
-@media (min-width: 520px) {
+@media (min-width: 640px) {
 	header {
 		display: grid;
         grid-template-columns: 1fr 1fr;
@@ -44,20 +44,12 @@
 
     .figure {
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
     }
     
     footer {
         background-color: #102e71;
         color: #F3F4F6;
-    }
-}
-
-@media (min-width: 740px) {
-    .figure {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 20px;
     }
 }
