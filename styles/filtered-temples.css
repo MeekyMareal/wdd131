@@ -90,29 +90,39 @@ main h2 {
     text-align: center;
 }
 .figure {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 section {
-    background-color: var(--header-background);
-    color: var(--white);
+    background-color: var(--nav-a-color);
+    color: var(--header-background);
     text-align: center;
     font-size: medium;
     max-width: 20rem;
     border-radius: 10px;
     height: fit-content;
+    box-shadow: 0 3px 9px var(--header-background);
+    margin-bottom: 20px;
 }
 
-img {
-    width: 20rem;
-    height: 20rem;
+.figure img {
     border-radius: 5px;
-    margin-top: 5px;
+	aspect-ratio: 4 / 3;
+	display: block;
+	height: 250px;
+	object-fit: cover;
+	width: 100%;
+	border: 1px solid var(--nav-background);
+	background: var(--body-background);
+}
 }
 
-h3 {
-    font-size: larger;
+.figure h3 {
+    margin: 0;
+	font-size: 2.3rem;
+	font-weight: 700;
 }
 
 h3, p {
@@ -125,7 +135,6 @@ footer {
     color: #FFFFFF;
 }
 
-/* wide screen */
 
 @media (min-width: 640px) {
 	header {
@@ -174,7 +183,11 @@ footer {
     .figure {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 5px;
+  
+    }
+
+    section {
+        margin-bottom: 20px;
     }
     
     footer {
