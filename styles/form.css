@@ -1,6 +1,7 @@
 * {
     max-width: 400PX;
     margin: 0 auto;
+    font-family: sans-serif;
 }
 header {
     background-color: #070606;
