@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+
+    </header>
+    <main>
+        <form method="get" action="review.html" class="review">
+            <label class="product">Product Name
+                <select id="product" name="product" required>
+                    <option value="">Chose a product</option>
+                </select>
+            </label>
+                <label class="rating">Overall Rating</label>
+                <section class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </section>
+                <div>
+                <label>Date of installation<input type="date" name="installation" required></label>
+                </div>
+                <div>Which features did you find useful in the product? (Check all that applies)
+                <label><input type="checkbox" name="durability" value="yes">Durability</label>
+                <label><input type="checkbox" name="ease" value="yes">Ease of Use</label>
+                <label><input type="checkbox" name="performance" value="yes">Performance</label>
+                <label><input type="checkbox" name="design" value="yes">Design</label>
+                </div>
+                <div>
+                <label>Written Review (optional) <input type="textarea" name="review"></label>
+                </div>
+                <div>
+                <label>Your Name (optional) <input type="text" name="fullname" placeholder="John Doe"></label>
+                </div>
+          <label><input type="submit" name="post-review" value="Post Review" id="post-review"></label>
+        </form>
+        <p class="para"><span class="label">Number of Visits: </span><span class="visits"></span></p>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🌸 George Ekpo 🌸 Nigeria</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>
