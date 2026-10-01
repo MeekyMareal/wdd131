@@ -1,11 +1,20 @@
+
+:root {
+    --Primary-Color: #791959;
+    --Accent-Color: #008080;
+    --Neutral: #b3f9e3;
+    --White-Text: #fff;
+    --caret-color: rgba(0, 0, 0, 0);
+}
+
 * {
-    max-width: 400PX;
+    max-width: 400px;
     margin: 0 auto;
     font-family: sans-serif;
 }
 header {
-    background-color: #070606;
-    color: aquamarine;
+    background-color: var(--Primary-Color);
+    color: var(--White-Text);
     text-align: center;
 }
 
@@ -16,7 +25,7 @@ main {
 
 form {
     width: 100%;
-    background-color: aquamarine;
+    background-color: var(--Neutral);
 }
 
 .product, .rating, .stars {
@@ -34,8 +43,8 @@ div {
 }
 
 #product option {
-    background-color: #2b4d41;
-    color: #fff;
+    background-color: var(--Primary-Color);
+    color: var(--White-Text);
 }
 
 .review input[type="radio"], .review input[type="checkbox"] {
@@ -43,21 +52,13 @@ div {
 }
 
 .review input[type="text"], .review input[type="email"], .review input[type="date"], .review #product, .review input[type="textarea"] {
-    background-color: #fff;
+    background-color: var(--White-Text);
     display: block;
-    border: 1px solid red;
+    border: 1px solid var(--Primary-Color);
     border-radius: 6px;
     padding: 0.75rem;
-    color: #0e0a0a;
     width: 100%;
     max-width: 350px;
-}
-
-.review fieldset {
-    margin: 1rem;
-    border: 1px solid black;
-    padding: 0.5rem 2%;
-    background-color: aquamarine;
 }
 
 .review label {
@@ -67,7 +68,7 @@ div {
 input[type="radio"] {
 	display: none;
 	position: relative;
-	caret-color: rgba(0, 0, 0, 0);
+	caret-color: var(--caret-color);
 }
 
 .stars {
@@ -77,18 +78,18 @@ input[type="radio"] {
 }
 
 .stars > label {
-	color: black;
+	color: var(--Primary-Color);
 	width: 30px;
 	height: 30px;
 	font-size: 2rem;
 	margin-left: 5px;
 	display: flex;
 	align-items: center;
-	caret-color: rgba(0, 0, 0, 0);
+	caret-color: var(--caret-color);
 }
 
 .stars > label:hover {
-	color: #000;
+	color: var(--Primary-Color);
 }
 
 .stars > label::before {
@@ -103,18 +104,19 @@ input[type="radio"] {
 .review input[type="submit"] {
     padding: 0.8rem;
     background-image: linear-gradient(#7d1616) #322d2d;
-    color: black;
+    color: var(--Primary-Color);
     border: none;
     border-radius: 6px;
     max-width: 400px;
-    box-shadow: 1px 2px 4px #7d1616;
+    box-shadow: 1px 2px 4px var(--Primary-Color);
     margin: 0 0 1rem 3rem;
 }
 
 .para {
     padding: 1rem;
-    background-color: gold;
+    background-color: var(--Accent-Color);
     text-align: center;
+    color: var(--White-Text);
 }
 
 .confirm {
@@ -122,7 +124,39 @@ input[type="radio"] {
 }
 
 footer {
-    background-color: #070606;
-    color: aquamarine;
+    background-color: var(--Primary-Color);
+    color: var(--White-Text);
     text-align: center;
+}
+
+@media (min-width: 840px) {
+    * {
+        max-width: 100%;
+        font-family: sans-serif;
+    }
+
+    form {
+        max-width: 400px;
+        background-color: var(--Accent-Color);
+        color: var(--White-Text);
+        border-radius: 3px;
+    }
+
+    body {
+        background-color: var(--Neutral);
+    }
+
+    .para {
+        background-color: var(--Accent-Color);
+        max-width: 400px;
+        border-radius: 6px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: var(--White-Text);
+    }
+    
+    .stars > label {
+        color: var(--White-Text);
+        caret-color: var(--caret-color);
+    }
 }
