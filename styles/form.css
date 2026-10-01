@@ -32,6 +32,11 @@ form {
     background-color: var(--Neutral);
 }
 
+.required:after {
+    content: " *";
+    font-weight: bold;
+}
+
 .product, .rating, .stars {
     margin-left: 9px;
 }

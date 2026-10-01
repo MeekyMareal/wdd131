@@ -18,11 +18,11 @@
     </header>
     <main>
         <form method="get" action="review.html" class="review">
-            <label for="product" class="product">Product Name</label>
+            <label for="product" class="product">Product Names <span class="required"></span></label>
             <select id="product" name="product" required>
                 <option value="" disabled selected>Select a Product ...</option>
             </select>
-            <label class="rating">Overall Rating</label>
+            <label for="stars" class="rating">Overall Rating <span class="required"></span></label>
             <section class="stars">
                 <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
                 <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
