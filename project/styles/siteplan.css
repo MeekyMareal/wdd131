@@ -12,6 +12,15 @@
     font-family: Sans-Serif;
 }
 
+h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: larger;
+}
+
 body {
     background-color: var(--Neutral);
 }
