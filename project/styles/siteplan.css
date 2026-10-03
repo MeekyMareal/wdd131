@@ -9,10 +9,10 @@
     padding: 0;
     margin: 0 auto;
     max-width: 1000px;
+    font-family: Sans-Serif;
 }
 
 body {
-    font-family: Sans-Serif;
     background-color: var(--Neutral);
 }
 
@@ -59,7 +59,7 @@ figure {
 
 footer {
     background-color: var(--Accent-Color);
-    color: #FFFFFF;
+    color: var(--White-Text);
 }
 footer p {
     text-align: center;
