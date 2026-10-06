@@ -1,8 +1,10 @@
 :root {
-    --Primary-Color: #791959;
-    --Accent-Color: #008080;
-    --Neutral: #b3f9e3;
-    --White-Text: #fff;
+    --Primary-Color: #003366;
+    --Accent-Color: #ffffff;
+    --bg-neutral: #f4f4f4;
+    --Neutral: #f4f4f4;
+    --text-dark: #212529;
+    --text-muted: #4a4a4a;
 }
 
 * {
@@ -14,6 +16,9 @@
 
 h1, h2, h3, h4 {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--bg-neutral);
+    color: var(--text-dark);
+    border-radius: 7px;
 }
 
 h4 {
@@ -22,12 +27,12 @@ h4 {
 }
 
 body {
-    background-color: var(--Neutral);
+    background-color: var(--bg-neutral);
 }
 
 header {
-    background-color: var(--Accent-Color);
-    color: var(--White-Text);
+    background-color: var(--Primary-Color);
+    color: var(--Accent-Color);
     display: flex;
     flex-direction: column;
 }
@@ -39,9 +44,9 @@ header {
 }
 
 section {
-    background-color: var(--Primary-Color);
+    background-color: var(--text-muted);
     margin: 1rem;
-    color: var(--White-Text);
+    color: var(--Neutral);
     padding: 2rem;
     border-radius: 9px;
     text-align: justify;
@@ -67,8 +72,8 @@ figure {
 }
 
 footer {
-    background-color: var(--Accent-Color);
-    color: var(--White-Text);
+    background-color: var(--Primary-Color);
+    color: var(--Neutral);
 }
 footer p {
     text-align: center;
