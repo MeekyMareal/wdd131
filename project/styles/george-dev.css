@@ -77,6 +77,11 @@ header {
     max-width: 25rem;
 }
 
+.hero img {
+    width: 100%;
+    height: 600px;
+}
+
 .hero-section {
     position: relative;
     height: 600px;
