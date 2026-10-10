@@ -694,7 +694,7 @@ footer ul {
     margin: 1rem;
 }
 
-footer h4, footer h3 {
+footer .span {
     text-align: center;
 }
 
