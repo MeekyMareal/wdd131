@@ -685,6 +685,10 @@ footer ul {
     padding: 0.5rem;
 }
 
+.footer-contact a {
+    margin: 0.5rem;
+}
+
 .copyright {
     text-align: center;
     margin: 1rem;
