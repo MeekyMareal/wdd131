@@ -1,0 +1,327 @@
+header {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: left;
+    padding: 1rem;
+}
+
+#menubtn {
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+
+#menubtn::before {
+    content: "≡";
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+header ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: whitesmoke;
+    padding: 1rem;
+    display: none;
+}
+
+.navigation ul.active {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation li  {
+    list-style-type: none;
+
+}
+
+.navigation a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+from main html -----
+
+        <section>
+            <div class="about">
+                <div id="projects">Curated Portfolio</div>
+                <h2>Featured Projects & Work Showcase</h2>
+                <p>Direct practical implementations demonstrating real code, architectural problem-solving, and course reference material from BYU-Idaho.</p>
+            </div>
+
+            <div class="project-blocks">
+                <article class="project-card">
+                    <div id="project-wdd130">
+                        <img src="images/project-wwr.svg" alt="Dry Oar White Water Rafting Web Project Preview">
+                    </div>
+                    <div class="project-details">
+                        <div class="tags-row">
+                            <span class="tags">BYU WDD 130</span>
+                            <span class="tags">Front-End Web</span>
+                        </div>  
+                        <h3>White Water Rafting Multi-Page Site (Dry Oar Adventures)</h3>
+                        <p>A multi-page responsive web project designed and coded from scratch during BYU-Idaho's 
+                        Web Fundamentals course. Demonstrates foundational front-end design, clean semantic 
+                        hierarchy, and adaptive styling for varied screen dimensions.</p>
+
+                        <ul class="project-features">
+                            <li><strong>Responsive Layout:</strong> Pure CSS Flexbox and Grid structure adapting from mobile viewports to widescreen displays.</li>
+                            <li><strong>Site Architecture:</strong> Structured multi-page navigation including Home, Rivers Guide, FAQs, and interactive Contact booking forms.</li>
+                            <li><strong>Design Fidelity:</strong> Follows professional wireframe specifications, cohesive color palette tokens, and optimized imagery.</li>
+                        </ul>
+
+                        <div class="all-tags">
+                            <span class="progress-tag">HTML5 Semantics</span>
+                            <span class="progress-tag">CSS3 Flexbox</span>
+                            <span class="progress-tag">CSS Grid</span>
+                            <span class="progress-tag">Responsive Design</span>
+                            <span class="progress-tag">Git Version Control</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/MeekyMareal/wdd130" target="_blank" class="projects-btn">
+                            <img src="images/github-svg.svg" alt="Github Svg Icon">GitHub Repository
+                            </a>
+                            <a href="https://byui-cse.github.io/wdd130-ww-course/" target="_blank" class="projects-btn">
+                                BYU WDD130 Course Resource
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div id="project-wdd131">
+                        <img src="images/project-wdd131.svg" alt="Dynamic Web Applications and JavaScript DOM Project Preview">
+                    </div>
+
+                    <div class="project-details">
+                        <div class="tags-row">
+                            <span class="tags">BYU WDD 131</span>
+                            <span class="tags">Dynamic JavaScript</span>
+                        </div>
+
+                        <h3>Dynamic Web Applications &amp; Interactive Card Collections</h3>
+
+                        <p>An advanced front-end project exploring client-side scripting, asynchronous event handling, 
+                        and persistent state management. Leverages modern JavaScript to dynamically generate, filter, 
+                        and update data-driven interfaces without reloading the page.</p>
+
+                        <ul>
+                            <li><strong>Dynamic DOM Manipulation:</strong> Renders cards, weather statistics, and temple catalogs on the fly using ES6 template literals and array transformations (`map`, `filter`, `reduce`).</li>
+                            <li> <strong>State Persistence:</strong> Saves user preferences and visit counters via the HTML5 `localStorage` Web API.</li>
+                            <li><strong>Client-Side Validation:</strong> Custom feedback validation for responsive review forms with real-time UI status updates.</li>
+                        </ul>
+
+                        <div class="all-tags">
+                            <span class="progress-tag">JavaScript ES6+</span>
+                            <span class="progress-tag">DOM API</span>
+                            <span class="progress-tag">localStorage</span>
+                            <span class="progress-tag">CSS Variables</span>
+                            <span class="progress-tag">Event-Driven Architecture</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/MeekyMareal/wdd131" target="_blank" class="projects-btn"> <img src="images/github-svg.svg" alt="Github Svg Icon">GitHub Repository
+                            </a>
+
+                            <a href="https://byui-cse.github.io/wdd131-ww-course/" target="_blank" class="projects-btn">BYU WDD131 Course Resource
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div id="project-cse111">
+                        <img src="images/project-cse111.svg" alt="Python Functional Programming & Test Suites Preview">
+                    </div>
+                    <div class="project-details">
+                        <div class="tags-row">
+                            <span class="tags">BYU CSE 111</span>
+                            <span class="tags">Python & Pytest</span>
+                        </div>
+                        <h3>Functional Python Engineering & Automated Pytest Suites</h3>
+                        <p>A rigorous suite of modular Python programs written for BYU-Idaho's Programming with 
+                        Functions course. Emphasizes pure functions, strong typing principles, dictionary structures, 
+                        CSV dataset processing, and high-coverage automated unit tests.</p>
+
+                        <ul class="project-features">
+                            <li><strong>Molar Mass Chemistry Calculator:</strong> Parses complex molecular formulas (e.g., C6H12O6), interacts with structured periodic table compound data, and calculates exact molar masses.</li>
+                            <li> <strong>Automated Unit Testing:</strong> Every algorithmic function is accompanied by an isolated `pytest` suite ensuring 100% boundary check pass rates.</li>
+                            <li><strong>Data File Handling:</strong> Reads, normalizes, and generates tabular receipt invoices from real-world structured CSV catalogs.</li>
+                        </ul>
+
+                        <div class="all-tags">
+                            <span class="progress-tag">Python 3</span>
+                            <span class="progress-tag">pytest</span>
+                            <span class="progress-tag">Functional Decomposition</span>
+                            <span class="progress-tag">CSV Parsing</span>
+                            <span class="progress-tag">Exception Handling</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/MeekyMareal/cse111" target="_blank" class="projects-btn">
+                                <img src="images/github-svg.svg" alt="Github Svg Icon">GitHub Repository
+                            </a>
+                            <a href="https://byui-cse.github.io/cse111-ww-course/index.html" target="_blank" class="projects-btn">
+                                BYU CSE111 Course Resource
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div id="project-cse110">
+                        <img src="images/project-cse110.svg" alt="Python Interactive Game and Logic Engine Preview">
+                    </div>
+                    <div class="project-details">
+                        <div class="tags-row">
+                            <span class="tags">BYU CSE 110</span>
+                            <span class="tags">Python Building Blocks</span>
+                        </div>
+                        <h3>Interactive Adventure Engine & Algorithmic Calculators</h3>
+                        <p>Foundational programming implementations covering decision trees, repetitive loop control, 
+                        and mathematical modeling. Features an interactive terminal-based text adventure with multi-path 
+                        logic branches, along with meteorological and financial calculation tools.</p>
+                        <ul>
+                            <li><strong>Branching Logic Tree:</strong> Interactive dungeon adventure with nested conditionals and dynamic inventory tracking.</li>
+                            <li><strong>Mathematical Modeling:</strong> Wind-chill atmospheric index calculation across temperature and wind speed matrices.</li>
+                            <li><strong>Input Validation:</strong> Guard clauses preventing type mismatch and divide-by-zero crashes.</li>
+                        </ul>
+                        <div class="all-tags">
+                            <span class="progress-tag">Python 3</span>
+                            <span class="progress-tag">Algorithmic Logic</span>
+                            <span class="progress-tag">Control Flow</span>
+                            <span class="progress-tag">Numerical Computation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://byui-cse.github.io/cse110-ww-course/index.html" target="_blank" class="projects-btn"><img src="images/github-svg.svg" alt="Github Svg Icon">GitHub Repository</a>
+                            <a href="https://byui-cse.github.io/cse110-ww-course/index.html" target="_blank" class="projects-btn">BYU CSE111 Course Resource</a>
+                        </div>
+                    </div>
+                </article>
+            </div>      
+        </section>
+
+        contacthtml - --------
+
+                <section class="contact-section">
+                <div class="contact-info" id="get-in-touch">
+                    <h3>Let's Build Something Together</h3>
+                    <p>Whether you have an upcoming web project, need assistance customizing a site, or would like to connect about software development and collaboration—I'd love to hear from you.</p>
+                </div>
+            <div class="contact-grid">  
+                <div class="contact-details">
+                    <div class="contact-details-child">
+                        <div>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="progress-tag">Direct Email</span>
+                            <span>georgeasukwoekpo@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-details-child">
+                        <div class="phone"></div>
+                        <div class="contact-details">
+                            <span class="progress-tag">Direct Phone</span>
+                            <span>+234-90-2522-7806</span>
+                        </div>
+                    </div>                        
+                    <div>
+                    <div class="social-links">
+                        <a href="https://github.com/meekymareal" target="_blank" class="social-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                        GitHub @meekymareal
+                        </a>
+
+                        <button id="copy-email-btn" class="social-btn" data-email="georgeekpo06@gmail.com">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        Copy Email
+                        </button>
+                    </div>
+                    </div>
+                    <div class="address">
+                        <span>Our Office is at:</span>
+                        <p>No.5 Lagos Street</p>
+                        <p>Benin, Nigeria</p>
+                    </div>
+                    <div class="map">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7930.939047126489!2d5.625753793579101!3d6.333166931648612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1785487137079!5m2!1sen!2sng"
+                        allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
+                <form method="get" action="massage.html" class="contacts">
+                    <div class="heading"><strong>SEND A MASSAGE</strong></div>
+                    <div>
+                        <label for="fname" class="required">First Name</label>
+                        <input type="text" id="Fname" name="fname" placeholder="John">
+                    </div>
+                    <div>
+                        <label for="lname" class="required">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Doe">
+                    </div>
+                    <div class="form-input">
+                        <label for="email" class="required">Email</label>
+                        <input type="email" id="email" name="email" placeholder="johndeo@gmail.com" required>
+                    </div>
+                    <div>
+                        <label for="tel">Your Phone Number (optional)<input type="tel" name="tel" id="tel" required></label>
+                    </div>
+                    <div>
+                        <label for="massage" class="required">Write your massage</label>
+                        <textarea id="massage" name="massage" rows="3" cols="50" required></textarea>
+                    </div>
+                    <label for="submit" class="submit"><input type="submit" name="send-massage" value="Send Your Massage" id="send-massage"></label>
+                </form>
+            </div>
+        </section>
+
+
+
+
+        from learn more btn
+        .learn-more {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.learn-more a {
+    background-color: var(--Primary-Color);
+    text-decoration: none;
+    color: var(--Neutral);
+    padding: 0.5rem;
+}
+
+.learn-more a:hover {
+    padding: 0.6rem;
+    border: 1px dashed var(--bg-neutral);
+}
+
+
+
+
+
+
+
+                        <button id="copy-email-btn" class="social-btn" onclick="copyEmail()">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        Copy Email
+                        </button>

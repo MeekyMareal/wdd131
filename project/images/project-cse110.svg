@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cse110-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#431407" />
+    </linearGradient>
+    <filter id="shadow4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="380" rx="16" fill="url(#cse110-bg)" />
+
+  <!-- Retro / Game Terminal Window -->
+  <g transform="translate(45, 35)" filter="url(#shadow4)">
+    <rect width="510" height="270" rx="10" fill="#0c0a09" stroke="#292524" stroke-width="1.5"/>
+    <!-- Terminal Header -->
+    <rect width="510" height="32" rx="10" fill="#1c1917"/>
+    <circle cx="20" cy="16" r="4.5" fill="#ef4444" />
+    <circle cx="34" cy="16" r="4.5" fill="#f59e0b" />
+    <circle cx="48" cy="16" r="4.5" fill="#10b981" />
+    <text x="75" y="20" fill="#a8a29e" font-family="monospace" font-size="10">adventure_game.py • Interactive Logic Engine</text>
+
+    <!-- Game Screen Area -->
+    <rect x="15" y="44" width="480" height="212" rx="6" fill="#000000" stroke="#292524"/>
+    
+    <text x="30" y="70" fill="#f97316" font-family="monospace" font-size="11" font-weight="bold">&gt; WELCOME TO THE DUNGEON OF LOGIC &lt;</text>
+    <text x="30" y="90" fill="#78716c" font-family="monospace" font-size="9">Initializing game loops, state variables, and decision trees...</text>
+    
+    <text x="30" y="115" fill="#e7e5e4" font-family="monospace" font-size="9.5">You stand at a crossroads in the misty caverns.</text>
+    <text x="30" y="132" fill="#fb923c" font-family="monospace" font-size="9.5">Do you wish to enter the [TORCHLIT] tunnel or follow the [WHISPERING] river?</text>
+
+    <!-- Choice box -->
+    <rect x="30" y="145" width="220" height="24" rx="4" fill="#292524" stroke="#44403c"/>
+    <text x="40" y="161" fill="#facc15" font-family="monospace" font-size="10">&gt; Choice: TORCHLIT_</text>
+
+    <!-- Branch outcome -->
+    <text x="30" y="190" fill="#a3e635" font-family="monospace" font-size="9.5">Outcome: The torch reveals an ancient inscription containing math riddles!</text>
+    <text x="30" y="208" fill="#cbd5e1" font-family="monospace" font-size="8.5">Wind Chill Calculator: Temp = 10°F, Speed = 25mph | Wind Chill = -7.4°F</text>
+    <text x="30" y="226" fill="#60a5fa" font-family="monospace" font-size="8.5">Meal Price Calculator: Subtotal: $45.20 | Tax (6%): $2.71 | Total: $47.91 [PAID]</text>
+
+    <!-- Blinking cursor badge -->
+    <rect x="30" y="236" width="10" height="2" fill="#22c55e"/>
+  </g>
+
+  <!-- Tag Pill -->
+  <g transform="translate(435, 335)">
+    <rect width="135" height="26" rx="13" fill="#1c1917" stroke="#fb923c" stroke-width="1.2"/>
+    <circle cx="16" cy="13" r="4" fill="#fb923c"/>
+    <text x="27" y="17" fill="#fff7ed" font-family="sans-serif" font-size="10" font-weight="600">BYU CSE110 Project</text>
+  </g>
+</svg>
