@@ -14,11 +14,7 @@
 }
 
 body {
-    font-family: "Google Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "GRAD" 0;
+    font-family: 'Roboto' Sans-Serif;
 }
 
 header {
