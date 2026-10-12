@@ -13,4 +13,11 @@ mainMenu.addEventListener('click', () => {
     }
 });
 
-document.getElementById("year").textContent = new Date().getFullYear();
+function updateFooterYear() {
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+}
+
+updateFooterYear();
