@@ -68,7 +68,7 @@ header {
     }
 }
 
-.open {
+.lastVisit {
     background-color: var(--Primary-Color);
     color: var(--Neutral);
     border-radius: 15px;

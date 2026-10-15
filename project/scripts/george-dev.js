@@ -290,6 +290,22 @@ searchBox.addEventListener("input", showProjects);
 
 showProjects();
 
+const visitText = document.getElementById("visit-text");
+
+const lastVisit = localStorage.getItem("lastVisit");
+
+if (lastVisit) {
+  const days = Math.floor((Date.now() - Number(lastVisit)) / 86400000);
+  if (days === 0) {
+    visitText.textContent = "Welcome back, you last visited today!";
+  } else {
+    visitText.textContent = `Welcome back, you last visited ${days} day(s) ago.`;
+  }
+}
+
+localStorage.setItem("lastVisit", Date.now());
+
+
 function updateFooterYear() {
     const yearSpan = document.getElementById("year");
     if (yearSpan) {
